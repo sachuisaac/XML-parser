@@ -62,4 +62,4 @@ DETAILED EXPLANATION OF THE XML FORMAT
 
 
 
-Usage: ruby XMLparser.rb sample.xml
+Usage: ruby parseXML.rb sample.xml
