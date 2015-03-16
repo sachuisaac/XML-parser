@@ -58,3 +58,8 @@ DETAILED EXPLANATION OF THE XML FORMAT
 * Few symbols used under <text> and <macro>,
 	* {cr}					--carriage return, during generation of string.
 	* {xxx}					--placeholder for the corresponding text generated lower down the hierarchy of the menu.
+
+
+
+
+Usage: ruby XMLparser.rb sample.xml
