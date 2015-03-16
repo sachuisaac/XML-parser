@@ -1,0 +1,965 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template uuid="319" title="Abdominal Pain, Adult" category="undefined" version="0.03 LIVE" datemod="Tue Jan 24 16:58:11 PST 2012">
+    <keywords/>
+    <dxs/>
+    <specialties/>
+    <sections>
+        <section uuid="15212" code="5217" inherit="O" key="Subjective">
+            <menu1 seltype="multiple">
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Reason for visit</label>
+                    <macro>Patient presents for {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>new onset symptom evaluation</label>
+                            <text>evaluation of new onset symptoms</text>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>initial evaluation of abdominal pain</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>follow-up abdominal pain evaluation</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>ongoing abdominal pain management</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Visit reason (describe)</label>
+                            <text>{xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe visit reason)</label>
+                            </picker>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Onset/Time course</label>
+                    <macro>Condition {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>acute onset (new condition)</label>
+                            <text>is reported to have developed acutely</text>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>chronic and ongoing condition</label>
+                            <text>is chronic and ongoing</text>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>acutely worse (chronic condition)</label>
+                            <text>severity is reported to have acutely worsened</text>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>progressively worsened</label>
+                            <text>is reported to have progressively worsened</text>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>intermittent presence of symptoms</label>
+                            <text>symptoms are described as intermittently present</text>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Duration (minutes)</label>
+                            <text>is reported as having been present for {xxx} minutes</text>
+                            <picker pickertype="number" conj="A" epocid="">
+                                <label>(minutes)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Duration (hours)</label>
+                            <text>is reported as having been present for {xxx} hours</text>
+                            <picker pickertype="number" conj="A" epocid="">
+                                <label>(hours)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Duration (days)</label>
+                            <text>is reported as having been present for {xxx} days</text>
+                            <picker pickertype="number" conj="A" epocid="">
+                                <label>(days)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Duration (weeks)</label>
+                            <text>is reported as having been present for {xxx} weeks</text>
+                            <picker pickertype="number" conj="A" epocid="">
+                                <label>(weeks)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Duration (months)</label>
+                            <text>is reported as having been present for {xxx} months</text>
+                            <picker pickertype="number" conj="A" epocid="">
+                                <label>(months)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Duration (years)</label>
+                            <text>is reported as having been present for {xxx} years</text>
+                            <picker pickertype="number" conj="A" epocid="">
+                                <label>(years)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Duration (describe)</label>
+                            <text>is reported as having been present for {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe condition duration)</label>
+                            </picker>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Abdominal pain detail</label>
+                    <macro>{cr}{cr}Abdominal pain is present and described as {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Localization</label>
+                            <text>affecting {xxx}</text>
+                            <menu3 seltype="multiple">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>RUQ</label>
+                                    <text>the RUQ of the abdomen</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>LUQ</label>
+                                    <text>the LUQ of the abdomen</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>midepigastric area</label>
+                                    <text>the midepigastric area</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>periumbilical area</label>
+                                    <text>the periumbilical area</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>R flank</label>
+                                    <text>the R flank</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>L flank</label>
+                                    <text>the L flank</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>RLQ</label>
+                                    <text>the RLQ of the abdomen</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>LLQ</label>
+                                    <text>the LLQ of the abdomen</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>suprapubic area</label>
+                                    <text>the suprapubic area</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no specific area of the abdomen</label>
+                                    <text/>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Quality</label>
+                            <text>having {xxx} quality</text>
+                            <menu3 seltype="multiple">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>pressure</label>
+                                    <text>a pressure-like</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>sharp</label>
+                                    <text>a sharp</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>dull</label>
+                                    <text>a dull</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>aching</label>
+                                    <text>an aching</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>cramping</label>
+                                    <text>a cramping</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>spasm</label>
+                                    <text>a spasm-like</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Radiation</label>
+                            <text>radiating {xxx}</text>
+                            <menu3 seltype="multiple">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>nonradiating</label>
+                                    <text>pattern is not present</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>L arm</label>
+                                    <text>to the left arm</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>R arm</label>
+                                    <text>to the right arm</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>back</label>
+                                    <text>to the back</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>R scapula</label>
+                                    <text>to the right scapula</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>L scapula</label>
+                                    <text>to the left scapula</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>R groin</label>
+                                    <text>to the R groin</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>L groin</label>
+                                    <text>to the L groin</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Severity (0-10, 10=worst)</label>
+                            <text>having a severity rated as {xxx}</text>
+                            <menu3 seltype="multiple">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>mild</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>moderate</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>severe</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>0/10 (no pain)</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+1/10</label>
+                                    <text>+1/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+2/10</label>
+                                    <text>+2/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+3/10</label>
+                                    <text>+3/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+4/10</label>
+                                    <text>+4/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+5/10</label>
+                                    <text>+5/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+6/10</label>
+                                    <text>+6/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+7/10</label>
+                                    <text>+7/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+8/10</label>
+                                    <text>+8/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+9/10</label>
+                                    <text>+9/10 (10=worst)</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>+10/10</label>
+                                    <text>+10/10 (10=worst)</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Timing: constant, intermittent</label>
+                            <text>being {xxx}</text>
+                            <menu3 seltype="multiple">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>constantly present</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>intermittently present</label>
+                                    <text/>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Pertinent positives/negatives</label>
+                    <macro>Pertinent positive/negative symptoms include {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>able to tolerate fluids</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>able to tolerate food</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>anorexia</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>weight loss</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>weight gain</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>hemetemesis</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>bilious vomiting</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>projectile vomiting</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>dysphagia</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>bloating</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>flatulence</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>reflux</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>blood in stool</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>melena</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>diarrhea</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>constipation</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>chest pain</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>back pain</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>dysuria</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>urinary frequency</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>genital discharge</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Other pertinent sx (describe)</label>
+                            <text>{cr}other symptoms: {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe symptoms)</label>
+                            </picker>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Exacerbating/Alleviating factors</label>
+                    <macro>{cr}{cr}Patient reports that {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Stress</label>
+                            <text>stress {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improves sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsens sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>has no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>has not been observed</label>
+                                    <text/>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Eating</label>
+                            <text>eating {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improves sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsens sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>has no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>has not been observed</label>
+                                    <text/>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Alcohol</label>
+                            <text>alcohol {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improves sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsens sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>has no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>has not been consumed</label>
+                                    <text>has not been consumed</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Antidiarrheal agents</label>
+                            <text>antidiarrheal agents {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improve sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsen sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>have no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>have not been tried</label>
+                                    <text/>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>NSAIDs</label>
+                            <text>NSAIDs {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improve sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsen sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>have no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>have not been tried</label>
+                                    <text>have not been tried</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Laxatives</label>
+                            <text>laxatives {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improve sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsen sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>have no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>have not been tried</label>
+                                    <text>have not been tried</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Antibiotics</label>
+                            <text>antibiotics {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improve sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsen sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>have no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>have not been tried</label>
+                                    <text>have not been tried</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Iron supplements</label>
+                            <text>iron supplements {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improve sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsen sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>have no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>have not been tried</label>
+                                    <text>have not been tried</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Defecation</label>
+                            <text>defecation {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improves sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsens sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>has no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>has not been observed</label>
+                                    <text>has not been observed</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Antiacids</label>
+                            <text>antiacids {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improve sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsen sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>have no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>have not been tried</label>
+                                    <text>have not been tried</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>H2 blockers</label>
+                            <text>H2 blockers {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improve sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsen sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>have no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>have not been tried</label>
+                                    <text>have not been tried</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>PPIs</label>
+                            <text>PPIs {xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improve sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsen sx</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no effect on sx</label>
+                                    <text>have no effect on sx</text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>have not been tried</label>
+                                    <text>have not been tried</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Other contributing factors (describe)</label>
+                            <text>contributing factors include {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe factor, effect)</label>
+                            </picker>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Tx response/Side effects</label>
+                    <macro>{cr}{cr}Treatment effects: {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>adherent to current tx</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="none">
+                            <label>nonadherent to current tx</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Reasons for nonadherence</label>
+                            <text>reasons for nonadherence include {xxx}</text>
+                            <menu3 seltype="multiple">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>side effects</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>nausea</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>stomach upset</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>diarrhea</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>swallowing difficulty</label>
+                                    <text>difficulty swallowing </text>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>cost</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>difficulty scheduling</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>forgetfulness</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>no perceived need for tx</label>
+                                    <text>no perceived need for treatment</text>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Nonadherence (describe)</label>
+                            <text>nonadherent to tx ({xxx})</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe nonadherence)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="menu3">
+                            <label>Treatment response</label>
+                            <text>{xxx}</text>
+                            <menu3 seltype="single">
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>resolved with treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>well-controlled on treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>improving on treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>stable on treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>unchanged on treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>variable response to treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>suboptimally-controlled on treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>poorly-controlled on treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>worsening on treatment</label>
+                                    <text/>
+                                </m3_item>
+                                <m3_item mark="N" codeType="epoc" epocid="" conj="A" childtype="none">
+                                    <label>exacerbated despite treatment</label>
+                                    <text/>
+                                </m3_item>
+                            </menu3>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Medical Hx specific to visit</label>
+                    <macro>{cr}{cr}Medical Hx includes {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>diabetes</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>migraine</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>nephrolithiasis</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>C difficile infection</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>inflammatory bowel disease</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>irritable bowel disease</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>s/p appendectomy</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>s/p cholecystectomy</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>Hx small bowel obstruction</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>Hx STD</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Other medical Hx (describe)</label>
+                            <text>(+) {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(specify risk factors)</label>
+                            </picker>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>OB/Gyn Hx specific to visit</label>
+                    <macro>{cr}{cr}OB/Gyn Hx includes: {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>ovarian cyst</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>Hx STD</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>pregnant</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>LMP (specify)</label>
+                            <text>LMP: {xxx}</text>
+                            <picker pickertype="date" conj="A" epocid="">
+                                <label>(specify first day of LMP)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Other relevant OB/Gyn Hx</label>
+                            <text>{xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe history)</label>
+                            </picker>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Lifestyle/Environment factors</label>
+                    <macro>{cr}{cr}Lifestyle/Environmental factors include {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>tobacco use</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>alcohol use</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>illicit drug use</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>sexually active</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Food exposure (specify)</label>
+                            <text>food exposures: (+) {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(specify food exposure)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Ill contacts (describe)</label>
+                            <text>ill contacts: (+) {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe ill contacts)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Recent travel (specify)</label>
+                            <text>recent travel: (+) {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(specify recent travel)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Pet/Animal exposure (describe)</label>
+                            <text>pet/animal exposure: (+) {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe pet/animal exposure)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Social stressors (describe)</label>
+                            <text>social stressors: (+) {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe social stressors)</label>
+                            </picker>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Other lifestyle/exposure (specify)</label>
+                            <text>(+) {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="48929">
+                                <label>(specify factors)</label>
+                            </picker>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+                <m1_item mark="N" codetype="epoc" epocid="" childtype="menu2">
+                    <label>Family Hx specific to visit</label>
+                    <macro>{cr}{cr}Family history includes {xxx}.</macro>
+                    <menu2 seltype="multiple">
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>colon cancer</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="yn">
+                            <label>inflammatory bowel disease</label>
+                            <text/>
+                        </m2_item>
+                        <m2_item mark="N" codetype="epoc" epocid="" childtype="picker">
+                            <label>Other family Hx (describe)</label>
+                            <text>(+) {xxx}</text>
+                            <picker pickertype="alpha" conj="A" epocid="">
+                                <label>(describe history)</label>
+                            </picker>
+                        </m2_item>
+                    </menu2>
+                </m1_item>
+            </menu1>
+        </section>
+    </sections>
+</template>
